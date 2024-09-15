@@ -1,12 +1,16 @@
 #include <iostream>
+#include <cstring>
 
 using namespace std;
 
-int main() {
+int main(int argc, char* argv[]) {
+    bool isHuman = false;
+	if (argc <= 1 || strcmp(argv[1], "false") != 0)
+	{
+		isHuman = true;
+	}
     float x,y;
-    bool interface;
-    cin>>interface;
-    if(interface){ 
+    if(isHuman){ 
         cout<<"Введите координату х: "<<endl;
         cin>>x;
         cout<<"Введите координату y: "<<endl;
