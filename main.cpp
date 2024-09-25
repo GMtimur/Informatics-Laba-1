@@ -28,8 +28,10 @@ int main(int argc, char* argv[]) {
                     if(x != 0 && y != 0)
                         cout << "Координаты: " << x << ", " << y << " входят в треугольник!" << endl;
                 }
-                else
-                    cout << "YES" << endl;
+                else{
+                    if(x != 0 && y != 0)
+                        cout << "YES" << endl;
+                }
             }
             else
             {
