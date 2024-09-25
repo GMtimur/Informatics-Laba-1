@@ -24,8 +24,10 @@ int main(int argc, char* argv[]) {
             y1 =  const1/const2 * x + const3;
             if ((y <= y1) && (y >= 0))
             {
-                if(isHuman)
-                    cout << "Координаты: " << x << ", " << y << " входят в треугольник!" << endl;
+                if(isHuman){
+                    if(x != 0 && y != 0)
+                        cout << "Координаты: " << x << ", " << y << " входят в треугольник!" << endl;
+                }
                 else
                     cout << "YES" << endl;
             }
